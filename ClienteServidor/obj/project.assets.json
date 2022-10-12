@@ -1,36 +1,38 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "/Users/xanwerneck/.nuget/packages/": {}
+    "C:\\Users\\Alexandre Andreza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/Fundamentos_ASP_NET/ClienteServidor/ClienteServidor.csproj",
+      "projectUniqueName": "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\ClienteServidor.csproj",
       "projectName": "ClienteServidor",
-      "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/Fundamentos_ASP_NET/ClienteServidor/ClienteServidor.csproj",
-      "packagesPath": "/Users/xanwerneck/.nuget/packages/",
-      "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/Fundamentos_ASP_NET/ClienteServidor/obj/",
+      "projectPath": "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\ClienteServidor.csproj",
+      "packagesPath": "C:\\Users\\Alexandre Andreza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/xanwerneck/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Alexandre Andreza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -41,16 +43,15 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -62,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3azAKpZyVLHCTv50QUg74a0IMYkhQCFn4y18odPwyDlLUwu22l5L32OLeg4CBJVsZS5EcSzsnne3NeiXWbmKnw==",
+  "dgSpecHash": "EE+WE7X7j8GWBWPlP7V/DqRdU1xX71BJYEB9mLsuLgpZ32WBv9Sa2Na87z7VKD3nH1Vrk1DVl1Wxbvat7lGQ+g==",
   "success": true,
-  "projectFilePath": "/Users/xanwerneck/Infnet/ASPNET/Projects/Fundamentos_ASP_NET/ClienteServidor/ClienteServidor.csproj",
+  "projectFilePath": "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\ClienteServidor.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
