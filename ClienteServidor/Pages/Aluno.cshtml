@@ -5,12 +5,49 @@
 }
 
 <p>
+    <strong>Metodo:</strong>
     @Model.Method
 </p>
 <p>
+    <strong>Caminho:</strong>
     @Model.Path
 </p>
 <p>
+    <strong>Conteúdo:</strong>
     @Model.Body
 </p>
-
+<p>
+    <strong>Scheme:</strong>
+    @Model.Scheme
+</p>
+<p>
+    <strong>Host:</strong>
+    @Model.Host
+</p>
+<p>
+    <strong>Parâmetros:</strong>
+    @if (Model.Query != null)
+    {
+        <ul>
+            @foreach (var KeyValue in Model.Query)
+            {
+                <li>@KeyValue.Key => @KeyValue.Value</li>
+            }
+        </ul>
+    }
+</p>
+<p>
+    <strong>Headers:</strong>
+    @if (Model.Headers != null)
+    {
+        <ul>
+            @foreach (var KeyValue in Model.Headers)
+            {
+            <li>@KeyValue.Key => @KeyValue.Value</li>
+            }
+        </ul>
+    }
+</p>
+<form method="post">
+    <input type="submit" name="name" value="Enviar via POST" />
+</form>

@@ -24,8 +24,6 @@ namespace ClienteServidor.Pages
         public void OnGet()
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
-            Console.WriteLine(this.HttpContext.Request.Method);
-            Console.WriteLine(this.HttpContext.Request.Path.ToString());
         }
     }
 }
