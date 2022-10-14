@@ -1,0 +1,34 @@
+﻿@page
+@model ClienteServidor.Pages.AlunoHttpModel
+@{
+}
+
+<table>
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>E-mail</td>
+            <td>Visualizar</td>
+            <td>Excluir</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in Model.alunos)
+        {
+            <tr>
+                <td>@aluno.Nome</td>
+                <td>@aluno.Email</td>
+                <td>
+                    <a href="/AlunoHttp/@aluno.Id">
+                        Ver
+                    </a>
+                </td>
+                <td>
+                    <a href="/AlunoHttp/Delete/@aluno.Id">
+                        Excluir
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

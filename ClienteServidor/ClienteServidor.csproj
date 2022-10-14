@@ -7,4 +7,10 @@
     <UserSecretsId>f199abf0-0e05-436b-8cf3-be16d5d3df4b</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>

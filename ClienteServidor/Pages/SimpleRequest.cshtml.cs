@@ -8,12 +8,7 @@ using System.Text;
 
 namespace ClienteServidor.Pages
 {
-    class Aluno
-    {
-        public string? Nome { get; set; }
-    }
-
-    public class AlunoModel : PageModel
+    public class SimpleRequest : PageModel
     {
         public string? Method { get; set; }
         public string? Path { get; set; }
@@ -26,7 +21,7 @@ namespace ClienteServidor.Pages
 
         private readonly ILogger<IndexModel> _logger;
 
-        public AlunoModel(ILogger<IndexModel> logger)
+        public SimpleRequest(ILogger<IndexModel> logger)
         {
             _logger = logger;
         }
