@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ClienteServidor.Models
+namespace ProtocoloHTTP.Models
 {
     public class Aluno
     {

@@ -1,0 +1,13 @@
+﻿@model HttpMethod.Models.Aluno
+@{
+    ViewData["Title"] = "Aluno Page";
+}
+
+<form method="post" action="/Aluno/PostFromForm">
+    <label>Nome</label>
+    <input type="text" value="@Model.Nome" id="Nome" name="Nome" />
+    <label>E-mail</label>
+    <input type="text" value="@Model.Email" id="Email" name="Email" />
+    <input type="submit" value="Enviar"/>
+</form>
+
