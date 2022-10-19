@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\ClienteServidor.csproj": {}
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/ClienteServidor/ClienteServidor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\ClienteServidor.csproj": {
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/ClienteServidor/ClienteServidor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\ClienteServidor.csproj",
+        "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/ClienteServidor/ClienteServidor.csproj",
         "projectName": "ClienteServidor",
-        "projectPath": "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\ClienteServidor.csproj",
-        "packagesPath": "C:\\Users\\Alexandre Andreza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\obj\\",
+        "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/ClienteServidor/ClienteServidor.csproj",
+        "packagesPath": "/Users/xanwerneck/.nuget/packages/",
+        "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/ClienteServidor/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alexandre Andreza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/xanwerneck/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,10 +43,25 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.30, 3.1.30]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -57,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "EE+WE7X7j8GWBWPlP7V/DqRdU1xX71BJYEB9mLsuLgpZ32WBv9Sa2Na87z7VKD3nH1Vrk1DVl1Wxbvat7lGQ+g==",
+  "dgSpecHash": "P8WUf3LOqdWxny+XLTTuF9p4iBd6V4yd0tjd1nW16AJBEVpsMhAYm/4JQcWBVHVZxlVqSdGkQsgom1net17BGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alexandre Andreza\\Documents\\Infnet\\ClienteServidor\\ClienteServidor.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/ClienteServidor/ClienteServidor.csproj",
+  "expectedPackageFiles": [
+    "/Users/xanwerneck/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/xanwerneck/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.30/microsoft.netcore.app.host.osx-x64.3.1.30.nupkg.sha512",
+    "/Users/xanwerneck/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
