@@ -7,4 +7,10 @@
     <UserSecretsId>f199abf0-0e05-436b-8cf3-be16d5d3df4b</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
 </Project>

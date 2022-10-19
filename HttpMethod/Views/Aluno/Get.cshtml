@@ -1,0 +1,33 @@
+﻿@model IEnumerable<HttpMethod.Models.Aluno>
+@{
+    ViewData["Title"] = "Aluno Page";
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.ActionLink(item.Id.ToString(), "Get", new { Id = item.Id })
+            </td>
+        </tr>
+    }
+</table>
+@Html.ActionLink("Criar aluno", "New")
