@@ -6,6 +6,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClienteServidor", "ClienteS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpMethod", "HttpMethod\HttpMethod.csproj", "{9AD2CEFC-526D-41D3-8C61-DC6169205133}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesenvolvimentoCamadas", "DesenvolvimentoCamadas\DesenvolvimentoCamadas.csproj", "{E4FA3784-E0EB-42C0-B26C-B7DA48C9A555}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{9AD2CEFC-526D-41D3-8C61-DC6169205133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AD2CEFC-526D-41D3-8C61-DC6169205133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AD2CEFC-526D-41D3-8C61-DC6169205133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FA3784-E0EB-42C0-B26C-B7DA48C9A555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FA3784-E0EB-42C0-B26C-B7DA48C9A555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FA3784-E0EB-42C0-B26C-B7DA48C9A555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FA3784-E0EB-42C0-B26C-B7DA48C9A555}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
