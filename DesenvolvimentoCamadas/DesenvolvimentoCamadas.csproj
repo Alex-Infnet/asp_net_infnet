@@ -6,8 +6,16 @@
 
   <ItemGroup>
     <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+    <None Remove="Models\" />
+    <None Remove="Data\" />
+    <None Remove="Data\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\Interfaces\" />
   </ItemGroup>
 </Project>

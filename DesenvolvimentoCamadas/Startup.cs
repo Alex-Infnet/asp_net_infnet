@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DesenvolvimentoCamadas.Data;
+using DesenvolvimentoCamadas.Data.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,8 @@ namespace DesenvolvimentoCamadas
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews().AddNewtonsoftJson();
+
+            services.AddScoped<DataLayer, DAAluno>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

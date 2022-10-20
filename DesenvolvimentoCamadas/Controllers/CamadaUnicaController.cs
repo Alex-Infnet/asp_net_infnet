@@ -26,6 +26,7 @@ namespace DesenvolvimentoCamadas.Controllers
             Situacao = _Situacao;
             Frequencia = _Frequencia;
             Nota = _Nota;
+            Resultado = new Resultado();
         }
     }
     public class Resultado
@@ -59,34 +60,45 @@ namespace DesenvolvimentoCamadas.Controllers
              * O aluno precisa estar matriculado
              * Para o aluno nao matriculado deve ser retornado vazio
              * O aluno para ser aprovado precisa ter frequencia maior ou igual a 75%
-             * O aluno para ser reprovado precisa ter nota superior a 5
+             * O aluno para ser aprovado precisa ter nota superior a 5
              */
 
             var aluno = alunos.First(a => a.Id == Id);
-            if (aluno.Situacao == "Matriculado")
+            if (aluno.Situacao != "Matriculado")
             {
-                return new JsonResult(null);
+                return new JsonResult(aluno);
             }
-            var resultado = new Resultado();
+            aluno.Resultado.Status = "Aprovado";
             if (aluno.Frequencia < 0.75)
             {
-                resultado.Status = "Reprovado";
+                aluno.Resultado.Status = "Reprovado";
             }
-            if (aluno.Frequencia < 0.75)
+            if (aluno.Nota < 5)
             {
-                resultado.Status = "Reprovado";
+                aluno.Resultado.Status = "Reprovado";
             }
-            aluno.Resultado = resultado;
-            return new JsonResult(resultado);
+            return new JsonResult(aluno);
         }
 
         [HttpGet]
         public JsonResult CalcularResultadoTodosAlunos()
         {
-            /*
-             * TO BE IMPLEMENTED
-             */
-            return new JsonResult(null);
+            foreach (var aluno in alunos)
+            {
+                if (aluno.Situacao == "Matriculado")
+                {
+                    aluno.Resultado.Status = "Aprovado";
+                    if (aluno.Frequencia < 0.75)
+                    {
+                        aluno.Resultado.Status = "Reprovado";
+                    }
+                    if (aluno.Nota < 5)
+                    {
+                        aluno.Resultado.Status = "Reprovado";
+                    }
+                }
+            }
+            return new JsonResult(alunos);
         }
     }
 }
