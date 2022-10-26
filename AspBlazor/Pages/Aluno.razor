@@ -1,0 +1,57 @@
+﻿@page "/aluno"
+
+@using AspBlazor.Data
+@using AspBlazor.Service
+@inject AlunoService alunoService
+
+<h1>Lista de alunos</h1>
+
+<p>Aqui você tem acesso a lista de alunos</p>
+
+@if (alunos == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>#</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var aluno in alunos)
+            {
+                <tr>
+                    <td>@aluno.Id</td>
+                    <td>@aluno.Nome</td>
+                    <td>@aluno.Email</td>
+                    <td>
+                        <button @onclick="() => removeAluno(aluno.Id)">
+                            Excluir
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<AspBlazor.Data.Aluno> alunos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        alunos = await alunoService.getAlunos();
+    }
+
+    private void removeAluno(int Id)
+    {
+        alunoService.Remove(Id);
+    }
+}
+
