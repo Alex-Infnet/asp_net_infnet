@@ -1,0 +1,42 @@
+﻿@page
+@model AspNetRazor.Pages.Reports.FaturamentoDoMesModel
+@{
+
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Valor do pagamento</th>
+            <th>Forma de pagamento</th>
+            <th>Data do pagamento</th>
+            <th>Data de faturamento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var receita in Model.receitas)
+            {
+                <tr>
+                    <td>@receita.Descricao</td>
+                    <td>@receita.Valor.ToString("N2")</td>
+                    <td>@receita.FormaPagamento</td>
+                    <td>@receita.DataPagamento.ToString("dd/MM/yyyy")</td>
+                    <td>@receita.DataFaturamento.ToString("dd/MM/yyyy")</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<h3>Resumo</h3>
+<p>Abaixo os valores recebidos e o previsto de faturamento</p>
+<h4>
+    <strong>Total recebido</strong>
+    @Model.TotalRecebido().ToString("N2")
+</h4>
+<h4>
+    <strong>Total faturado</strong>
+    @Model.TotalFaturado().ToString("N2")
+</h4>

@@ -1,0 +1,47 @@
+﻿# Script usado durante a aula 5
+## Reference: https://learn.microsoft.com/pt-br/dotnet/core/tools/
+## https://learn.microsoft.com/pt-br/dotnet/core/tools/dotnet?source=recommendations
+
+## Conhecendo um pouco mais o Cli do dotnet
+
+dotnet --help
+dotnet new --help [parametros de criacao de projeto]
+dotnet new -l [lista dos tipos de projetos criados com .net]
+
+
+dotnet new webapp -o AspNetRazor -f net6.0
+
+# -o diretorio criado para aplicacao
+# -f versao .net do projeto
+# webapp tipo de aplicacao criada
+
+dotnet sln add AspNetRazor/AspNetRazor.csproj
+# sln add [adiciona o projeto criado a solucao]
+
+
+--- Run the app
+cd AspNetRazor
+dotnet watch
+
+--- Creating Models / Data
+# create a models folder
+# create a data folder
+
+IMPLEMENT the class and data class
+
+--- Creating Reports folder
+# create a reports folder in Pages
+
+--- Creating pages
+
+dotnet new page -h
+dotnet new page -n CaixaDoDia -o Pages/Reports -na AspNetRazor.Pages.Reports
+
+-- Inject DAReceita in program.cs
+# builder.services.AddSingleton<DAReceita>();
+
+--- Creating faturamento pages
+dotnet new page -n FaturamentoDoMes -o Pages/Reports -na AspNetRazor.Pages.Reports
+
+--- Create a field in the Receita to compute the Data do Faturamento
+in the model of the page compute - Total recebido / Total faturado
