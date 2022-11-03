@@ -1,0 +1,29 @@
+﻿@page
+@model AspNetRazor.Pages.Reports.CaixaDoDiaModel
+@{
+
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Valor do pagamento</th>
+            <th>Forma de pagamento</th>
+            <th>Data do pagamento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var receita in Model.receitas)
+            {
+                <tr>
+                    <td>@receita.Descricao</td>
+                    <td>@receita.Valor.ToString("N2")</td>
+                    <td>@receita.FormaPagamento</td>
+                    <td>@receita.DataPagamento.ToString("dd/MM/yyyy")</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
