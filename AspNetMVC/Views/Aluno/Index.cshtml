@@ -1,0 +1,26 @@
+﻿@model AspNetMVC.Models.Aluno;
+@{
+}
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Matrícula</td>
+            <td>Nome</td>
+            <td>Situação</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var aluno in Model.BuscarTodos())
+            {
+                <tr>
+                    <td>@aluno.Matricula</td>
+                    <td>@aluno.Nome</td>
+                    <td>@aluno.Situacao</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
