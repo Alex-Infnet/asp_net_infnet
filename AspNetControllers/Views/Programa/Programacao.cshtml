@@ -1,0 +1,14 @@
+﻿@{
+}
+
+<p>Lista de programacao</p>
+
+<ul>
+    @{ foreach (var programa in ViewBag.Programas)
+        {
+        <li>
+            @programa
+        </li>
+        }   
+    }
+</ul>
