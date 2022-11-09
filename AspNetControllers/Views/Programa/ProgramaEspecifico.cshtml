@@ -1,0 +1,14 @@
+﻿@{
+    var Programa = ViewData["Programa"] as List<string>;
+    var Nome = Programa?[0];
+    var Genero = Programa?[1];
+    var Inicio = Programa?[2];
+    var Duracao = Programa?[3];
+}
+
+<p>Programa especifico</p>
+
+<p>Nome : @Nome</p>
+<p>Genero : @Genero</p>
+<p>Inicio : @Inicio</p>
+<p>Duracao : @Duracao</p>
