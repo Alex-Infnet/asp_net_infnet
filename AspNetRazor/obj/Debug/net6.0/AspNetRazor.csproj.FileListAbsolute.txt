@@ -14,6 +14,11 @@
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/AspNetRazor.MvcApplicationPartsAssemblyInfo.cache
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/AspNetRazor.RazorAssemblyInfo.cache
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/AspNetRazor.RazorAssemblyInfo.cs
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/staticwebassets/msbuild.AspNetRazor.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/staticwebassets/msbuild.build.AspNetRazor.props
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.AspNetRazor.props
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.AspNetRazor.props
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/staticwebassets.pack.json
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/staticwebassets.build.json
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/staticwebassets.development.json
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/AspNetRazor/obj/Debug/net6.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
