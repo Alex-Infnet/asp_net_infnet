@@ -1,9 +1,13 @@
-﻿using EmissoraViewModel.ViewModel;
+﻿using EmissoraViewModel.DataSource;
+using EmissoraViewModel.ViewModel;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add datasources
+builder.Services.AddTransient<DAProfessor>();
 
 // Add DI
 builder.Services.AddTransient<ProgramaViewModel>();

@@ -1,0 +1,33 @@
+﻿@model List<EmissoraViewModel.Models.Professor> 
+@{
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Matrícula</td>
+            <td>Salário</td>
+            <td>Excluir</td>
+        </tr>
+    </thead>
+    @{
+        foreach (var prof in Model)
+        {
+        <tr>
+            <td>
+                @prof.Nome
+            </td>
+            <td>
+                @prof.Matricula
+            </td>
+            <td>
+                @prof.Salario.ToString("N2")
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", "Professor", new { Matricula = prof.Matricula })
+            </td>
+        </tr>
+        }
+    }
+</table>

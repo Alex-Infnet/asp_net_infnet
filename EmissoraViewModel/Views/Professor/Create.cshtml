@@ -1,0 +1,15 @@
+﻿@model EmissoraViewModel.Models.Professor
+@{
+}
+
+<form method="post" action="/Professor/Create">
+    @Html.AntiForgeryToken()
+    <label>Nome</label>
+    <input type="text" name="Nome" />
+    <label>Matricula</label>
+    <input type="text" name="Matricula" />
+    <label>Salário</label>
+    <input type="number" name="Salario" />
+
+    <input type="submit" value="Enviar" />
+</form>
