@@ -1,0 +1,34 @@
+﻿
+@{
+}
+
+@{
+    if (ViewBag.Erro != null)
+    {
+        <span class="alert alert-error">
+            @ViewBag.Erro
+        </span>
+    }
+    else
+    {
+        <table>
+            <thead>
+                <tr>
+                    <td>Nome:</td>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var prog in ViewBag.Programas)
+                    {
+                        <tr>
+                            <td>@prog.Nome</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+}
+
+

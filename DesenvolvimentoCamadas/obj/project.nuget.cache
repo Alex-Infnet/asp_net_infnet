@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SX3kG20cJfwKQEi5xNFzp9q9KWPTJYqNiKoiDVUJ6GftXkKkyMnGY6hdWJ4Nsjp5I6MJ60hJG/vTGTYlm9mxpw==",
+  "dgSpecHash": "djAdZoPIx2xVGnzoXDpOEQOOr9/Jh7vyAzFUq1Ps6z8/s5n6AlLcqiYf9lkrjtT/V3aROI94Vqr1GgKOv4iVwQ==",
   "success": true,
   "projectFilePath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_infnet/DesenvolvimentoCamadas/DesenvolvimentoCamadas.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "/Users/xanwerneck/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
     "/Users/xanwerneck/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/xanwerneck/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "/Users/xanwerneck/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.30/microsoft.netcore.app.host.osx-x64.3.1.30.nupkg.sha512",
+    "/Users/xanwerneck/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.31/microsoft.netcore.app.host.osx-x64.3.1.31.nupkg.sha512",
     "/Users/xanwerneck/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
   "logs": []
