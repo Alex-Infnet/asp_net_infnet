@@ -1,0 +1,15 @@
+@model List<EmissoraViewModel.ViewModel.ProgramaViewModel>
+@{
+    ViewData["Title"] = "Lista de Programas";
+}
+
+<h1>Index</h1>
+
+<ul>
+    @{
+        foreach(var prog in Model)
+        {
+            <li>@prog.NomePrograma - @prog.NomeApresentador</li>
+        }
+    }
+</ul>
