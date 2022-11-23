@@ -1,0 +1,76 @@
+﻿# Start the mssql server
+
+## Check the mssql status
+> systemctl status mssql-server --no-pager
+
+## Start the mssql-server
+> systemctl start mssql-server
+
+## Run the queries
+
+### Create database
+USE master
+GO
+
+DROP DATABASE emissora
+
+CREATE DATABASE emissora
+
+### Create the tables
+
+USE emissora
+GO
+
+create table Programa
+(
+    Id INTEGER NOT NULL PRIMARY KEY,
+    Nome VARCHAR(150) NOT NULL,
+    Descricao VARCHAR(150),
+    Duracao FLOAT
+)
+
+create table Apresentador
+(
+    Id INTEGER NOT NULL PRIMARY KEY,
+    Nome VARCHAR(150) NOT NULL,
+    Salario FLOAT
+)
+
+### Add relacionamento
+
+ALTER TABLE Programa
+ADD ApresentadorId INT
+GO
+
+ALTER TABLE Programa
+ADD CONSTRAINT FK_Apresentador 
+FOREIGN KEY (ApresentadorId)
+REFERENCES Apresentador (Id)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+GO
+
+### Adicionar / Manipular dados
+
+use emissora
+go
+
+select * from Programa
+select * from Apresentador
+
+insert into Apresentador
+(Id, Nome, Salario)
+VALUES
+(1, 'Apresentador', 1200),
+(2, 'Apresentadora', 2000)
+
+insert into Programa
+(Id, Nome, Descricao, Duracao, ApresentadorId)
+VALUES
+(1, 'Programa 1', 'Apenas um programa', 120, 1),
+(2, 'Programa 2', 'Apenas um programa2', 180, 2)
+
+select * from Programa
+
+select * from Apresentador
+
