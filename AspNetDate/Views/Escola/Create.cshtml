@@ -1,0 +1,17 @@
+﻿
+@{
+}
+
+<h2>
+    @ViewBag.DataCriacao
+</h2>
+
+<form method="post" action="/Escola/Create">
+    @Html.AntiForgeryToken()
+    <label>Nome</label>
+    <input type="text" name="Nome" />
+    <label>Date</label>
+    <input type="date" name="DataCriacao" />
+
+    <input type="submit" value="Enviar" />
+</form>
