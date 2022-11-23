@@ -1,11 +1,5 @@
 ﻿# Start the mssql server
 
-## Check the mssql status
-> systemctl status mssql-server --no-pager
-
-## Start the mssql-server
-> systemctl start mssql-server
-
 ## Run the queries
 
 ### Create database
@@ -62,7 +56,8 @@ insert into Apresentador
 (Id, Nome, Salario)
 VALUES
 (1, 'Apresentador', 1200),
-(2, 'Apresentadora', 2000)
+(2, 'Apresentadora', 2000),
+(3, 'Apresentador 3', 5000)
 
 insert into Programa
 (Id, Nome, Descricao, Duracao, ApresentadorId)
@@ -73,4 +68,11 @@ VALUES
 select * from Programa
 
 select * from Apresentador
+
+update Programa
+set Duracao = 180
+where Id = 1
+
+delete Apresentador
+where Id = 3
 
