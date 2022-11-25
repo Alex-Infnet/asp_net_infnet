@@ -1,7 +1,14 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using AspNetDate.Models;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<DBEscolaContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("DBEscolaContext"))
+    );
 
 var app = builder.Build();
 
