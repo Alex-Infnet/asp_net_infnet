@@ -10,6 +10,11 @@ namespace AspNetDate.Controllers
 {
     public class EscolaController : Controller
     {
+        public readonly DBEscolaContext DBEscolaContext;
+        public EscolaController(DBEscolaContext context)
+        {
+            DBEscolaContext = context;
+        }
         // GET: Escola
         public ActionResult Index()
         {
@@ -25,6 +30,13 @@ namespace AspNetDate.Controllers
         // GET: Escola/Create
         public ActionResult Create()
         {
+            DBEscolaContext.DBEscola.Add(
+                new Escola()
+                {
+                    DataCriacao = DateTime.Now,
+                    Nome = "Escola com mesmo nome"
+                });
+            DBEscolaContext.SaveChanges();
             return View();
         }
 
