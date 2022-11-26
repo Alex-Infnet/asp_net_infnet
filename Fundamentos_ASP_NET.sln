@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmissoraViewModel", "Emisso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDate", "AspNetDate\AspNetDate.csproj", "{5DEE675A-23B1-4D5E-B299-3D6034FA4173}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcEF", "AspNetMvcEF\AspNetMvcEF.csproj", "{82170664-7D13-4B54-AF0D-2BBD023E950C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{5DEE675A-23B1-4D5E-B299-3D6034FA4173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DEE675A-23B1-4D5E-B299-3D6034FA4173}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DEE675A-23B1-4D5E-B299-3D6034FA4173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
