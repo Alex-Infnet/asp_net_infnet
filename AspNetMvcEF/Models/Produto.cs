@@ -10,6 +10,7 @@ namespace AspNetMvcEF.Models
 		public double PrecoCusto { get; set; }
 		public double PrecoVenda { get; set; }
 		public DateTime Validade { get; set; }
+		public Fornecedor? Fornecedor { get; set; }
 	}
 }
 
