@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDate", "AspNetDate\As
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcEF", "AspNetMvcEF\AspNetMvcEF.csproj", "{82170664-7D13-4B54-AF0D-2BBD023E950C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaHandsOn", "LojaHandsOn\LojaHandsOn.csproj", "{DE7C184A-9131-49D6-AD78-10722E77ADF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7C184A-9131-49D6-AD78-10722E77ADF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7C184A-9131-49D6-AD78-10722E77ADF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7C184A-9131-49D6-AD78-10722E77ADF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7C184A-9131-49D6-AD78-10722E77ADF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
