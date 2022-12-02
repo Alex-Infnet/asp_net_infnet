@@ -32,11 +32,15 @@ namespace AspNetMvcEF.Controllers
             //Atualize o fornecedor de um produto
             //Tente remover um fornecedor que possui produtos associados
             
-            return Ok(GetAllProdutos());
+            return Ok(GetAllProdutosOrderByPrecoVenda());
         }
         private List<Produto> GetAllProdutos()
         {
             return db.produtos.Include("Fornecedor").ToList();
+        }
+        private List<Produto> GetAllProdutosOrderByPrecoVenda()
+        {
+            return db.produtos.Include("Fornecedor").OrderByDescending(p => p.PrecoVenda).ToList();
         }
         private List<Fornecedor> GetAllFornecedores()
         {
