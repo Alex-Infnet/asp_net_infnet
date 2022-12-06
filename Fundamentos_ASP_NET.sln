@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDate", "AspNetDate\As
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcEF", "AspNetMvcEF\AspNetMvcEF.csproj", "{82170664-7D13-4B54-AF0D-2BBD023E950C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campeonato", "Campeonato\Campeonato.csproj", "{93CF3D47-7DCA-48A8-BDC7-15B9749DB29A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampeonatoTests", "CampeonatoTests\CampeonatoTests.csproj", "{82E079C5-2828-4063-8D30-7421E11D673B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82170664-7D13-4B54-AF0D-2BBD023E950C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CF3D47-7DCA-48A8-BDC7-15B9749DB29A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CF3D47-7DCA-48A8-BDC7-15B9749DB29A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CF3D47-7DCA-48A8-BDC7-15B9749DB29A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CF3D47-7DCA-48A8-BDC7-15B9749DB29A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E079C5-2828-4063-8D30-7421E11D673B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E079C5-2828-4063-8D30-7421E11D673B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E079C5-2828-4063-8D30-7421E11D673B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E079C5-2828-4063-8D30-7421E11D673B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
