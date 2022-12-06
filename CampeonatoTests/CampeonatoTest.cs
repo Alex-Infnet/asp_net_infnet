@@ -11,16 +11,19 @@ public class Tests
         times = new List<Time>();
         times.Add(new Time()
         {
+            Nome = "time A",
             GolsFeitos = 5,
             GolsSofridos = 2
         });
         times.Add(new Time()
         {
-            GolsFeitos = 4,
-            GolsSofridos = 2
+            Nome = "time B",
+            GolsFeitos = 8,
+            GolsSofridos = 5
         });
         times.Add(new Time()
         {
+            Nome = "time C",
             GolsFeitos = 3,
             GolsSofridos = 2
         });
@@ -38,5 +41,21 @@ public class Tests
         // Check
         Assert.That(resultado, Is.Not.Empty);
         Assert.That(resultado, Has.Count.EqualTo(2));
+        Assert.That(resultado.First().Nome, Is.EqualTo("time A"));
+    }
+
+    [Test]
+    public void WhenHasTime_ShouldReturnClassificadosComMaisGols()
+    {
+        // Prepare
+        var campeonato = new Competicao(times);
+
+        // Act
+        var resultado = campeonato.ClassificadosComMaisGols();
+
+        // Check
+        Assert.That(resultado, Is.Not.Empty);
+        Assert.That(resultado, Has.Count.EqualTo(2));
+        Assert.That(resultado.First().Nome, Is.EqualTo("time B"));
     }
 }

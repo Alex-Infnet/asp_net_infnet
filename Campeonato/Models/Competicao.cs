@@ -35,7 +35,12 @@ namespace Campeonato.Models
 
         public List<Time> Classificados()
         {
-            return times.OrderBy(t => t.SaldoGols()).Take(2).ToList();
+            return times.OrderByDescending(t => t.SaldoGols()).Take(2).ToList();
+        }
+
+        public List<Time> ClassificadosComMaisGols()
+        {
+            return times.OrderByDescending(t => t.GolsFeitos).Take(2).ToList();
         }
 	}
 }
